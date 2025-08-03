@@ -2,18 +2,18 @@ module.exports = {
   title: "OpenAI Codex",
   icon: "openai.webp",
   link: "https://github.com/openai/codex",
-  "pre": [{
-    "title": "OpenAI API Key",
-    "env": "OPENAI_API_KEY",
-    "key": "openai.com"
+  pre: [{
+    title: "OpenAI API Key",
+    env: "OPENAI_API_KEY",
+    key: "openai.com"
   }],
-  "run": [{
-    "id": "run",
-    "method": "shell.run",
-    "params": {
-      "message": "npx -y @openai/codex",
-      "path": "{{args.cwd}}",
-      "input": true
+  run: [{
+    id: "run",
+    method: "shell.run",
+    params: {
+      message: "npx -y @openai/codex",
+      path: "{{args.cwd}}",
+      input: true
     }
   }]
 }
