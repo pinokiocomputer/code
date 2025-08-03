@@ -8,7 +8,7 @@ module.exports = {
       method: "shell.run",
       params: {
         message: "code .",
-        path: info.cwd()
+        path: "{{args.cwd}}",
       }
     }]
   }
