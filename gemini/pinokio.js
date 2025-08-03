@@ -1,0 +1,12 @@
+module.exports = {
+  "run": [{
+    "id": "run",
+    "method": "shell.run",
+    "params": {
+      "message": "npx -y https://github.com/google-gemini/gemini-cli",
+      "path": "{{args.cwd}}",
+      "buffer": 1024,
+      "input": true
+    }
+  }]
+}
