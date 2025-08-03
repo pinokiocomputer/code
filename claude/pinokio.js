@@ -12,7 +12,7 @@ module.exports = {
         skip: true
       },
       env: {
-        CLAUDE_CODE_GIT_BASH_PATH": "{{kernel.path('bin/miniconda/Library/bin/bash.exe')}}"
+        CLAUDE_CODE_GIT_BASH_PATH: "{{kernel.path('bin/miniconda/Library/bin/bash.exe')}}"
       },
       message: "npx -y @anthropic-ai/claude-code@latest",
       path: "{{args.cwd}}",

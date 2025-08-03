@@ -1,4 +1,7 @@
 module.exports = {
+  title: "Gemini CLI",
+  icon: "gemini.jpeg",
+  link: "https://github.com/google-gemini/gemini-cli",
   run: [{
     id: "run",
     method: "shell.run",
