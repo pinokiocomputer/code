@@ -16,6 +16,7 @@ module.exports = {
     params: {
       html: "Windsurf is not installed. Click to visit the Windsurf homepage to download",
       href: "https://windsurf.com/",
+      target: "_blank"
     }
   }]
 }

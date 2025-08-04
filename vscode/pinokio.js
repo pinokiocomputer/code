@@ -16,6 +16,7 @@ module.exports = {
     params: {
       html: "Visual Studio Code is not installed. Click to visit the Visual Studio Code homepage to download",
       href: "https://code.visualstudio.com/",
+      target: "_blank"
     }
   }]
 }

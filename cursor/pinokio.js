@@ -15,7 +15,8 @@ module.exports = {
     method: "notify",
     params: {
       html: "Cursor is not installed. Click to visit the Cursor homepage to download",
-      href: "https://cursor.com"
+      href: "https://cursor.com",
+      target: "_blank"
     }
   }]
 }
