@@ -3,13 +3,11 @@ module.exports = {
   link: "https://code.visualstudio.com/",
   icon: "vscode.png",
   description: "The AI Code Editor",
-  run: async (kernel, info) => {
-    return [{
-      method: "shell.run",
-      params: {
-        message: "code .",
-        path: "{{args.cwd}}",
-      }
-    }]
-  }
+  run: [{
+    method: "shell.run",
+    params: {
+      message: "code .",
+      path: "{{args.cwd}}",
+    }
+  }]
 }
