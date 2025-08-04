@@ -4,7 +4,7 @@ module.exports = {
   icon: "vscode.png",
   description: "The AI Code Editor",
   run: [{
-    method: "shell.run",
+    method: "exec",
     params: {
       message: "code .",
       path: "{{args.cwd}}",

@@ -4,9 +4,9 @@ module.exports = {
   icon: "windsurf.png",
   description: "The AI Code Editor",
   run: [{
-    method: "shell.run",
+    method: "exec",
     params: {
-      message: "code .",
+      message: "windsurf .",
       path: "{{args.cwd}}"
     }
   }]

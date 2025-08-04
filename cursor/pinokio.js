@@ -4,7 +4,7 @@ module.exports = {
   icon: "cursor.jpeg",
   description: "The AI Code Editor",
   run: [{
-    method: "shell.run",
+    method: "exec",
     params: {
       message: "cursor .",
       path: "{{args.cwd}}"
