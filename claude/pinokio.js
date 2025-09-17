@@ -14,7 +14,7 @@ module.exports = {
       env: {
         CLAUDE_CODE_GIT_BASH_PATH: "{{kernel.path('bin/miniconda/Library/bin/bash.exe')}}"
       },
-      message: "npx -y @anthropic-ai/claude-code@latest {{args.prompt ? '"' + args.prompt + '"' : ''}}",
+      message: "npx -y @anthropic-ai/claude-code@latest {{args.prompt ? '\"' + args.prompt + '\"' : ''}}",
       path: "{{args.cwd}}",
       input: true,
       buffer: 1024
@@ -24,7 +24,7 @@ module.exports = {
     id: "run",
     method: "shell.run",
     params: {
-      message: "npx -y @anthropic-ai/claude-code@latest {{args.prompt ? '"' + args.prompt + '"' : ''}}",
+      message: "npx -y @anthropic-ai/claude-code@latest {{args.prompt ? '\"' + args.prompt + '\"' : ''}}",
       path: "{{args.cwd}}",
       input: true,
       buffer: 1024

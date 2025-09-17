@@ -6,7 +6,7 @@ module.exports = {
     id: "run",
     method: "shell.run",
     params: {
-      message: "npx -y @openai/codex {{args.prompt ? '"' + args.prompt + '"' : ''}}",
+      message: "npx -y @openai/codex {{args.prompt ? '\"' + args.prompt + '\"' : ''}}",
       path: "{{args.cwd}}",
       input: true
     }
