@@ -6,7 +6,7 @@ module.exports = {
     id: "run",
     method: "shell.run",
     params: {
-      message: "npx -y https://github.com/google-gemini/gemini-cli -i {{args.prompt ? '\"' + args.prompt + '\"' : ''}}",
+      message: "npx -y https://github.com/google-gemini/gemini-cli -i {{args.prompt ? JSON.stringify(args.prompt) : ''}}",
       path: "{{args.cwd}}",
       buffer: 1024,
       input: true
