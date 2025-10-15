@@ -11,7 +11,7 @@ module.exports = {
       conda: {
         skip: true
       },
-      message: "npx -y @openai/codex -c shell_environment_policy.inherit=\"all\" {{args.prompt ? JSON.stringify(args.prompt) : ''}}",
+      message: "npx -y @openai/codex -c shell_environment_policy.inherit=\"all\" --full-auto {{args.prompt ? JSON.stringify(args.prompt) : ''}}",
       path: "{{args.cwd}}",
       input: true
     }
@@ -20,7 +20,7 @@ module.exports = {
     id: "run",
     method: "shell.run",
     params: {
-      message: "npx -y @openai/codex -c shell_environment_policy.inherit=\"all\" {{args.prompt ? JSON.stringify(args.prompt) : ''}}",
+      message: "npx -y @openai/codex -c shell_environment_policy.inherit=\"all\" --full-auto {{args.prompt ? JSON.stringify(args.prompt) : ''}}",
       path: "{{args.cwd}}",
       input: true
     }
