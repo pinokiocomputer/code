@@ -6,7 +6,7 @@ module.exports = {
     id: "run",
     method: "shell.run",
     params: {
-      message: "npx -y @charmland/crush",
+      message: "npx -y @charmland/crush@latest",
       path: "{{args.cwd}}",
       buffer: 1024,
       input: true
